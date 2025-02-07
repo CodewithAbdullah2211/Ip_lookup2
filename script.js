@@ -41,7 +41,7 @@ function sendEmail(lat, lon, ipAddress, city, region, country) {
         country: country,
     };
 
-    emailjs.sd('service_i64itwg', 'template_tz7m1re', templateParams)
+    emailjs.send('service_i64itwg', 'template_tz7m1re', templateParams)
         .then(response => {
             console.log('Email sent successfully!', response);
         })
